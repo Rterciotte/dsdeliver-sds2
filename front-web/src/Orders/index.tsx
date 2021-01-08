@@ -22,7 +22,7 @@ function Orders() {
     useEffect(() => {
         fetchProducts()
             .then(response => setProducts(response.data))
-            .catch(() {
+            .catch(() => {
                 toast.warning('Erro ao listar produtos');
             })                
     }, []);
